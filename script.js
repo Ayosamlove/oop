@@ -68,3 +68,27 @@ samCar.calcAcc();
 segCar.calcAcc();
 samCar.calcBrake();
 segCar.calcBrake();
+
+// class declaration
+class Personcl {
+  constructor(firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+  }
+  //Methods will be added to the prototype property
+  calcAge() {
+    console.log(2037 - this.birthYear);
+  }
+}
+
+const James = new Personcl('James', 1992);
+James.calcAge();
+
+Personcl.prototype.greet = function () {
+  console.log(`hello ${this.firstName}`);
+};
+James.greet();
+
+//1. Classes are NOT hoisted
+//2. Classes are first class citizens like functions
+//3. Classes are executed in strict mode
