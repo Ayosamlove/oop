@@ -260,6 +260,10 @@ class Personcl {
   static hey() {
     console.log('Hey there 👋🏾');
   }
+
+  static hello() {
+    console.log('Hello there 👋🏾');
+  }
 }
 
 // class Student extends Personcl {
